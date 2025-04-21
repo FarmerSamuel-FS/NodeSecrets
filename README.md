@@ -18,7 +18,6 @@ Node Secrets/
 ## 🔹 Step 1: Hardcoded Secret
 
 **Location:** `Step 1/`  
-**GitHub:** [node-hardcoded-secret](https://github.com/FarmerSamuel-FS/node-hardcoded-secret)
 
 This example uses a hardcoded secret directly inside `app.js`. The secret is checked against user input through a simple HTML form.
 
@@ -30,7 +29,6 @@ To demonstrate the **insecurity of embedding secrets in source code**, especiall
 ## 🔹 Step 2: Shared `.env` Secret (Insecure Practice)
 
 **Location:** `Step 2/`  
-**GitHub:** [node-env-shared-secret](https://github.com/FarmerSamuel-FS/node-env-shared-secret)
 
 This example uses the `dotenv` package to load a secret from a `.env` file, but **intentionally pushes the `.env` file to GitHub** to demonstrate how this exposes secrets in source control.
 
@@ -42,7 +40,6 @@ To simulate what happens when secrets are included in a public repository. GitHu
 ## 🔹 Step 3: Secure `.env` Secret (Best Practice)
 
 **Location:** `Step 3/`  
-**GitHub:** [node-env-secure](https://github.com/FarmerSamuel-FS/node-env-secure)
 
 This version uses a `.env` file that is excluded using `.gitignore`, following best practices. The secret is loaded securely using `dotenv`, and the `README.md` provides instructions for running the app.
 
